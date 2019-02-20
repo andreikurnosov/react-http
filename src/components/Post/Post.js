@@ -3,8 +3,7 @@ import React from 'react';
 
 import './Post.css';
 
-const post = (props) => {
-  return (
+const post = (props) => (
     <article className="Post" onClick={props.clicked}>
       <h1>{props.title}</h1>
       <div className="Info">
@@ -12,7 +11,6 @@ const post = (props) => {
       </div>
     </article>
   );
-};
 
 // export default withRouter(post);
 export default post;
