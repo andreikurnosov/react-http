@@ -10,6 +10,7 @@ class Posts extends Component {
   };
 
   componentDidMount = () => {
+
     axios
       .get('/posts')
       .then((response) => {
